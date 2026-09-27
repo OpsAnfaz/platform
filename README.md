@@ -5,7 +5,7 @@ Kubernetes y GitOps.
 
 
 ## Stack tecnológico
-Terraform, CD/CI, Cloud Infra
+Terraform, CD/CI, AWS, ArgoCD, Kubernetes, Grafana/Prometheus
 
 ## Arquitectura
  docs/architecture.md
