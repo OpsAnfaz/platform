@@ -1,0 +1,500 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Fajardo · opsanfaz · DevOps Engineer</title>
+  <meta name="description" content="DevOps Engineer specializing in AWS, Terraform, Kubernetes and GitOps. Building OpsAnfaz platform." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#0FF4C6',
+            dim: '#4a5568',
+            soft: '#a0aec0',
+            bright: '#ffffff',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    * { scroll-behavior: smooth; box-sizing: border-box; }
+    ::selection { background: #0FF4C6; color: #050d1a; }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-track { background: #050d1a; }
+    ::-webkit-scrollbar-thumb { background: #1a2a4a; border-radius: 2px; }
+
+    body {
+      background-color: #050d1a;
+      background-image:
+        radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 40, 100, 0.7) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 60%, rgba(0, 20, 70, 0.4) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 30% at 10% 80%, rgba(0, 30, 80, 0.3) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      backdrop-filter: blur(4px);
+    }
+
+    .card:hover {
+      border-color: rgba(15, 244, 198, 0.2);
+      background: rgba(255,255,255,0.05);
+      transition: all 0.2s;
+    }
+
+    nav {
+      background: rgba(5, 13, 26, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .tag {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #a0aec0;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .timeline-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    a { transition: color 0.15s; }
+  </style>
+</head>
+<body class="text-soft font-sans antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full z-50">
+    <div class="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#top" class="font-mono text-accent text-sm hover:opacity-80">~/opsanfaz</a>
+      <div class="flex items-center gap-6 text-xs text-white/60">
+        <a href="#work" class="hover:text-white transition-colors">work</a>
+        <a href="#projects" class="hover:text-white transition-colors">projects</a>
+        <a href="#certifications" class="hover:text-white transition-colors">certs</a>
+        <a href="#blog" class="hover:text-white transition-colors">blog</a>
+        <a href="#contact" class="hover:text-white transition-colors">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-3xl mx-auto px-6 pt-32 pb-24 space-y-28" id="top">
+
+    <!-- HERO -->
+    <section>
+      <p class="font-mono text-accent text-xs mb-6">&gt; whoami</p>
+      <h1 style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(3.5rem, 10vw, 7rem); line-height: 0.95; letter-spacing: -0.01em;" class="text-white mb-3">Angel Fajardo</h1>
+      <p class="font-mono text-white/30 text-sm mb-6">@opsanfaz</p>
+      <p class="text-white/60 leading-relaxed max-w-xl mb-3">
+        Infrastructure as code, not as chaos.<br>
+        <span class="text-white/40 italic text-sm">Real cloud deployments, no slides.</span>
+      </p>
+      <p class="text-white/60 leading-relaxed max-w-xl">
+        I'm Angel Fajardo, a Platform Engineer based in Spain. I design cloud platform architecture on Azure, build IaC with Terraform and drive DevOps practices across engineering teams — currently at
+        <a href="https://www.kongsberg.com/" target="_blank" class="text-accent hover:underline">Kongsberg</a>.
+      </p>
+
+      <div class="mt-8 space-y-2 text-sm">
+        <div class="flex items-center gap-3">
+          <span class="text-accent">▸</span>
+          <a href="https://www.kongsberg.com/" target="_blank" class="text-white hover:text-accent">Platform Engineer @ Kongsberg</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-accent">▸</span>
+          <span class="text-white/60">Building <a href="https://github.com/OpsAnfaz/platform" target="_blank" class="text-white hover:text-accent">OpsAnfaz platform</a> on AWS + EKS</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-accent">▸</span>
+          <span class="text-white/60">Terraform Associate · AWS SA · CKA — in progress</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work">
+      <p class="font-mono text-accent text-xs mb-8">// experience</p>
+      <h2 class="text-xl font-semibold text-white mb-8">Work & experience</h2>
+
+      <div class="space-y-5">
+
+        <!-- Kongsberg — Platform Engineer (current) -->
+        <div class="card rounded-lg p-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded flex items-center justify-center text-xs font-mono text-accent flex-shrink-0"
+              style="background:rgba(15,244,198,0.07);border:1px solid rgba(15,244,198,0.15)">KM</div>
+            <div class="flex-1">
+              <div class="flex items-start justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-medium text-sm">Platform Engineer</p>
+                  <p class="text-white/40 text-xs mt-0.5">Kongsberg · Spain</p>
+                </div>
+                <span class="text-white/30 text-xs font-mono">Oct 2026 – present</span>
+              </div>
+              <ul class="mt-3 space-y-1.5">
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Designing and implementing Azure platform architecture following security, scalability and governance best practices.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Developing and standardising Azure DevOps services, CI/CD pipelines and infrastructure automation.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>IaC with Terraform and reusable deployment patterns. Establishing Azure DevOps governance and project standards.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Driving Platform Engineering and DevOps practices — self-service, automation and operational efficiency across teams.</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">Platform Engineering</span>
+                <span class="tag">Azure</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">IaC</span>
+                <span class="tag">Governance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kongsberg Maritime — DevOps Engineer (previous) -->
+        <div class="card rounded-lg p-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded flex items-center justify-center text-xs font-mono text-white/30 flex-shrink-0"
+              style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07)">KM</div>
+            <div class="flex-1">
+              <div class="flex items-start justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-medium text-sm">DevOps Engineer</p>
+                  <p class="text-white/40 text-xs mt-0.5">Kongsberg Maritime · Spain</p>
+                </div>
+                <span class="text-white/30 text-xs font-mono">Apr 2025 – Oct 2026</span>
+              </div>
+              <ul class="mt-3 space-y-1.5">
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Automated manual infrastructure and operational processes through Azure DevOps CI/CD pipelines and Python, PowerShell and Bash.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Managed Windows and Linux infrastructure across on-premises environments, automating software and package deployments using Docker and Ansible.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Designed and maintained Azure cloud infrastructure and CI/CD automation, improving deployment consistency and reducing manual intervention.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Implemented monitoring with Grafana and Prometheus. Supported Agile/Scrum practices, contributing as Scrum Master.</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Ansible</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Python</span>
+                <span class="tag">Bash</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Convotis Iberia -->
+        <div class="card rounded-lg p-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded flex items-center justify-center text-xs font-mono text-white/30 flex-shrink-0"
+              style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07)">CI</div>
+            <div class="flex-1">
+              <div class="flex items-start justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-medium text-sm">DevOps Engineer</p>
+                  <p class="text-white/40 text-xs mt-0.5">Convotis Iberia · Spain</p>
+                </div>
+                <span class="text-white/30 text-xs font-mono">Jul 2024 – Apr 2025</span>
+              </div>
+              <ul class="mt-3 space-y-1.5">
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Designed and implemented scalable Azure Databricks solutions and automated resource provisioning for Unity Catalog operations and infrastructure.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Implemented IaC using Terraform for Azure environments. Developed CI/CD automation using Azure DevOps Pipelines, PowerShell and Bash.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Managed and automated AWS infrastructure including Amazon ECS, Fargate, VPN connectivity and cloud backup solutions.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Implemented cloud monitoring and security practices using AWS CloudWatch, Prometheus and Grafana.</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">Azure Databricks</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">AWS ECS</span>
+                <span class="tag">Fargate</span>
+                <span class="tag">CloudWatch</span>
+                <span class="tag">PowerShell</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sngular -->
+        <div class="card rounded-lg p-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded flex items-center justify-center text-xs font-mono text-white/30 flex-shrink-0"
+              style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07)">SG</div>
+            <div class="flex-1">
+              <div class="flex items-start justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-medium text-sm">Cloud Engineer</p>
+                  <p class="text-white/40 text-xs mt-0.5">SNGULAR · Spain</p>
+                </div>
+                <span class="text-white/30 text-xs font-mono">Mar 2022 – Jul 2024</span>
+              </div>
+              <ul class="mt-3 space-y-1.5">
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Cloud administration and support on AWS environments across DEV, QA and PROD.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Troubleshooting Level 2 incidents across Linux, Windows Server, databases and CMS platforms.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Containerisation and orchestration using Docker and Amazon ECS.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Developing CI/CD pipelines with GitHub Actions and scripting with Bash. Customer-facing role under Agile (Kanban).</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">AWS ECS</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Linux</span>
+                <span class="tag">CloudWatch</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Bash</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NTT DATA -->
+        <div class="card rounded-lg p-5">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 rounded flex items-center justify-center text-xs font-mono text-white/30 flex-shrink-0"
+              style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07)">NT</div>
+            <div class="flex-1">
+              <div class="flex items-start justify-between flex-wrap gap-2">
+                <div>
+                  <p class="text-white font-medium text-sm">IT System Technician</p>
+                  <p class="text-white/40 text-xs mt-0.5">NTT DATA Europe & LATAM · Spain</p>
+                </div>
+                <span class="text-white/30 text-xs font-mono">Mar 2021 – Mar 2022</span>
+              </div>
+              <ul class="mt-3 space-y-1.5">
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>L1 incident resolution and cloud infrastructure management in AWS and Azure under strict SLA agreements.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>AWS services: EC2, IAM, Route53, ACM, ALB/ELB and Traefik. Azure: App Service, Azure DB, Active Directory.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>Application monitoring with New Relic and CloudWatch. Linux (Ubuntu, Debian, CentOS) and Windows Server administration.</li>
+                <li class="text-white/50 text-xs leading-relaxed flex gap-2"><span class="text-accent/50 flex-shrink-0">▸</span>DevOps tooling: Git, Bitbucket, Bamboo pipelines. Ticket management via ServiceNow.</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-4">
+                <span class="tag">AWS EC2</span>
+                <span class="tag">Route53</span>
+                <span class="tag">New Relic</span>
+                <span class="tag">CloudWatch</span>
+                <span class="tag">Linux</span>
+                <span class="tag">Azure AD</span>
+                <span class="tag">ServiceNow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="font-mono text-accent text-xs mb-8">// projects</p>
+      <h2 class="text-xl font-semibold text-white mb-8">Projects I build and keep running.</h2>
+
+      <div class="space-y-4">
+
+        <div class="card rounded-lg p-5">
+          <div class="flex items-start justify-between gap-4 flex-wrap">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-accent" style="animation: pulse 2s infinite"></span>
+                <p class="text-white font-medium text-sm">OpsAnfaz Platform</p>
+              </div>
+              <p class="text-white/50 text-sm leading-relaxed max-w-lg">
+                End-to-end cloud-native platform on AWS. Terraform modules for VPC, EKS, IAM and ECR.
+                GitOps with ArgoCD, full CI/CD via GitHub Actions, observability with Prometheus and Grafana.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tag">Terraform</span>
+                <span class="tag">AWS EKS</span>
+                <span class="tag">ArgoCD</span>
+                <span class="tag">Prometheus</span>
+                <span class="tag">Grafana</span>
+              </div>
+            </div>
+            <a href="https://github.com/OpsAnfaz/platform" target="_blank"
+              class="text-xs font-mono text-accent hover:underline whitespace-nowrap mt-1">github →</a>
+          </div>
+        </div>
+
+        <div class="card rounded-lg p-5 opacity-50">
+          <div class="flex items-start justify-between gap-4 flex-wrap">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                <p class="text-white font-medium text-sm">Terraform AWS Modules</p>
+              </div>
+              <p class="text-white/50 text-sm leading-relaxed max-w-lg">
+                Reusable Terraform modules for VPC, EKS cluster, IAM roles and CloudWatch alarms.
+                Remote backend on S3 with state locking via DynamoDB.
+              </p>
+              <div class="flex flex-wrap gap-2 mt-3">
+                <span class="tag">Terraform</span>
+                <span class="tag">AWS</span>
+                <span class="tag">S3 Backend</span>
+                <span class="tag">DynamoDB</span>
+              </div>
+            </div>
+            <span class="text-xs font-mono text-white/20 whitespace-nowrap mt-1">in progress</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <p class="font-mono text-accent text-xs mb-8">// certifications</p>
+      <h2 class="text-xl font-semibold text-white mb-8">Certifications in progress.</h2>
+
+      <div class="card rounded-lg overflow-hidden">
+
+        <div class="flex items-center justify-between px-5 py-4 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent" style="animation:pulse 2s infinite"></span>
+            <div>
+              <p class="text-white text-sm font-medium">HashiCorp Terraform Associate</p>
+              <p class="text-white/30 text-xs font-mono mt-0.5">Infrastructure as Code</p>
+            </div>
+          </div>
+          <span class="text-accent text-xs font-mono border border-accent/20 px-2 py-0.5 rounded">active</span>
+        </div>
+
+        <div class="flex items-center justify-between px-5 py-4 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-white/15"></span>
+            <div>
+              <p class="text-white/60 text-sm font-medium">AWS Developer Associate</p>
+              <p class="text-white/20 text-xs font-mono mt-0.5">Cloud development · Stephane Maarek</p>
+            </div>
+          </div>
+          <span class="text-white/20 text-xs font-mono">Q1 2027</span>
+        </div>
+
+        <div class="flex items-center justify-between px-5 py-4 border-b border-white/5">
+          <div class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-white/15"></span>
+            <div>
+              <p class="text-white/60 text-sm font-medium">AWS Solutions Architect Associate</p>
+              <p class="text-white/20 text-xs font-mono mt-0.5">Cloud architecture · Stephane Maarek</p>
+            </div>
+          </div>
+          <span class="text-white/20 text-xs font-mono">Q2 2027</span>
+        </div>
+
+        <div class="flex items-center justify-between px-5 py-4">
+          <div class="flex items-center gap-3">
+            <span class="w-1.5 h-1.5 rounded-full bg-white/15"></span>
+            <div>
+              <p class="text-white/60 text-sm font-medium">CKA — Certified Kubernetes Administrator</p>
+              <p class="text-white/20 text-xs font-mono mt-0.5">Kubernetes · KodeKloud</p>
+            </div>
+          </div>
+          <span class="text-white/20 text-xs font-mono">Q3 2027</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <p class="font-mono text-accent text-xs mb-8">// blog</p>
+      <h2 class="text-xl font-semibold text-white mb-2">Latest posts</h2>
+      <p class="text-white/30 text-sm mb-8">Notes on infrastructure, DevOps and things I learn building OpsAnfaz.</p>
+
+      <div class="card rounded-lg overflow-hidden">
+
+        <div class="px-5 py-4 border-b border-white/5 group cursor-pointer">
+          <span class="text-xs font-mono text-accent/60">Infrastructure</span>
+          <p class="text-white/80 text-sm font-medium mt-1 group-hover:text-accent transition-colors">
+            Why Terraform remote backend matters before you touch EKS
+          </p>
+          <p class="text-white/20 text-xs font-mono mt-1">Coming soon</p>
+        </div>
+
+        <div class="px-5 py-4 border-b border-white/5 group cursor-pointer">
+          <span class="text-xs font-mono text-accent/60">GitOps</span>
+          <p class="text-white/80 text-sm font-medium mt-1 group-hover:text-accent transition-colors">
+            ArgoCD from zero: GitOps flow that actually works in production
+          </p>
+          <p class="text-white/20 text-xs font-mono mt-1">Coming soon</p>
+        </div>
+
+        <div class="px-5 py-4 group cursor-pointer">
+          <span class="text-xs font-mono text-accent/60">Kubernetes</span>
+          <p class="text-white/80 text-sm font-medium mt-1 group-hover:text-accent transition-colors">
+            CrashLoopBackOff: the five most common causes and how to fix them
+          </p>
+          <p class="text-white/20 text-xs font-mono mt-1">Coming soon</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="font-mono text-accent text-xs mb-6">// contact</p>
+      <h2 class="text-xl font-semibold text-white mb-3">Building something with my own identity.</h2>
+      <p class="text-white/50 text-sm leading-relaxed max-w-lg mb-8">
+        This site is my personal space — a living project that grows alongside OpsAnfaz.
+        Every section here reflects what I'm building, learning and shipping in real time.
+        If you want to follow the journey or just say hello, I'm easy to reach.
+      </p>
+
+      <div class="flex items-center gap-3 mb-8">
+        <a href="mailto:angelfzaplana@gmail.com"
+          class="font-mono text-sm text-accent hover:underline">angelfzaplana@gmail.com</a>
+        <button onclick="navigator.clipboard.writeText('angelfzaplana@gmail.com').then(() => { this.textContent='copied'; setTimeout(()=>this.textContent='copy',1500) })"
+          class="text-xs text-white/30 hover:text-white/60 font-mono px-2 py-0.5 rounded transition-colors"
+          style="border:1px solid rgba(255,255,255,0.08)">
+          copy
+        </button>
+      </div>
+
+      <div class="flex items-center gap-6 text-sm text-white/30">
+        <a href="https://github.com/OpsAnfaz" target="_blank" class="hover:text-white transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/ángel-fajardo-zaplana-170133188/" target="_blank" class="hover:text-white transition-colors">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(255,255,255,0.05)" class="py-6 px-6">
+    <div class="max-w-3xl mx-auto flex items-center justify-between text-xs font-mono text-white/20">
+      <span>© Angel Fajardo · opsanfaz</span>
+      <span>Elche, Spain</span>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      navLinks.forEach(link => {
+        const isActive = link.getAttribute('href') === '#' + current;
+        link.style.color = isActive ? '#0FF4C6' : '';
+      });
+    });
+  </script>
+</body>
+</html>
+
+</body></html>
